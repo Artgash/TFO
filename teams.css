@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #fff; /* White text */
+}
+
+/* Header */
+header {
+    background-color: #ffcc00; /* Yellow background */
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Black text */
+    font-weight: bold;
+    font-size: 1.2em; /* Slightly larger font */
+    transition: color 0.3s, transform 0.3s; /* Animation for hover effect */
+}
+
+nav ul li a:hover {
+    color: #cc9900; /* Slightly darker yellow on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.logo h1 {
+    font-size: 4em; /* Larger title */
+    color: #ffcc00; /* Yellow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.logo h2 {
+    font-size: 2em; /* Larger subtitle */
+    color: #fff; /* White */
+    margin-top: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Centering the content */
+    margin: auto; /* Centering the main content */
+}
+
+h2#welcomeMessage {
+    text-align: center;
+    font-size: 2.5em; /* Larger welcome message */
+    margin-bottom: 30px;
+    color: #ffcc00; /* Yellow */
+}
+
+section {
+    margin-left:50px;
+    margin: 30px 0;
+    background: rgba(255, 204, 0, 0.1); /* Light yellow background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+h3 {
+    color: #ffcc00; /* Yellow headings */
+    margin-bottom: 15px;
+    font-size: 2em; /* Larger section titles */
+    text-align: center; /* Center align section titles */
+}
+
+/* Team List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: rgba(255, 204, 0, 0.2); /* Light yellow background */
+    border: 1px solid #ffcc00; /* Yellow border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Animation */
+}
+
+ul li:hover {
+    background-color: rgba(255, 204, 0, 0.4); /* Darker yellow on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #ffcc00; /* Yellow background */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+footer p {
+    color: #000; /* Black text */
+    font-size: 1em; /* Normal size text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack links on smaller screens */
+    }
+    nav ul li {
+        margin: 10px 0; /* Smaller margin */
+    }
+
+    .logo h1 {
+        font-size: 3em; /* Smaller logo on mobile */
+    }
+
+    h2#welcomeMessage {
+        font-size: 2em; /* Smaller welcome message on mobile */
+    }
+}

@@ -1,0 +1,235 @@
+/* Base styles for body, header, and footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #FFD700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #FFD700;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* Logo styling */
+.logo {
+    text-align: center;
+    margin: 20px;
+}
+
+.logo h1, .logo h2 {
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 1px 1px 5px #ffffff;
+}
+
+#welcomeMessage {
+    font-size: 26px;
+    color: #FFD700;
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease;
+}
+
+/* Section styling */
+section {
+    width: 80%;
+    max-width: 800px;
+    background-color: #111111;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #FFD700;
+    border-bottom: 1px solid #FFD700;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FFD700;
+    transition: transform 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+    color: #ffffff;
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid #FFD700;
+    position: relative;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Button and link effects */
+button, a {
+    font-family: inherit;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+button:hover, a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .logo h1, .logo h2 {
+        font-size: 20px;
+    }
+
+    section h3 {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
+
+/* Additional styling for effects and layout */
+section ul li .icon {
+    color: #FFD700;
+    transition: transform 0.2s ease;
+}
+
+section ul li:hover .icon {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+/* Box shadows and subtle effects */
+.logo h1 {
+    font-size: 36px;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+section {
+    margin-left:50px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Styling for buttons or CTA elements (if needed) */
+.button {
+    color: #FFD700;
+    background: #1a1a1a;
+    border: 1px solid #FFD700;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+/* Final touches for consistency */
+header, footer {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
